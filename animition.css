@@ -1,0 +1,116 @@
+body{
+	
+	margin: 0;
+	font-family: sans-serif;
+}
+.animition{
+	height:100vh;
+	width: 100%;
+	background-image: url('f2c18ae39e7f5b395a48be199d4aceba.jpg');
+	margin: 0;
+	position: relative;
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+
+}
+.navbar h1{
+  	color: 	white	;
+  	float: left;
+  	font-size: 20px;
+  	cursor: pointer;
+
+}
+.navbar{
+	width: 85%;
+	height: 15%;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+button{
+	color: #fbfcfd;
+	padding: 10px 25px;
+	background:transparent;
+	border-radius: 30px;
+	border:1px solid #fff;
+	outline: none;
+	cursor: pointer;
+	
+}
+
+.content {
+	color: #fbfbfd;
+	position: absolute;
+	top: 50%;
+	left: 8%;
+	transform:  translateY(-50%);
+	margin: 0;
+}
+.content h1 {
+	font-size: 60px;
+	margin: 0;
+}
+.content button{
+	margin:20px 0 0 200px;
+}
+.bubbles img {
+
+	width: 70px;
+	animation: bubble 7s linear infinite;
+}
+.bubbles {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: absolute;
+	bottom: -100px;
+
+}
+
+@keyframes bubble{
+	0%{
+		transform:  translateY(0);
+		opacity: 0;
+	}50%{
+				opacity: 1;
+	}80%{
+		
+		opacity: 1;
+	}100%{
+		transform:  translateY(-80vh);
+		opacity: 0;
+	}
+}
+.bubbles img:nth-child(1){
+	animation-delay: 2s;
+}
+.bubbles img:nth-child(2){
+	animation-delay: 1s;
+	width: 30px;
+}
+.bubbles img:nth-child(3){
+	animation-delay: 3s;
+	width: 50px;
+}
+.bubbles img:nth-child(4){
+	animation-delay: 1.5s;
+	width: 100px;
+}
+.bubbles img:nth-child(5){
+	animation-delay: 2.5s;
+	width: 60px;
+}
+.bubbles img:nth-child(6){
+	animation-delay: 3.3s;
+	width: 20px;
+}
+.bubbles img:nth-child(7){
+	animation-delay: 2s;
+		width: 40px;
+}
+.bubbles img:nth-child(8){
+	animation-delay: 1.9s;
+}
